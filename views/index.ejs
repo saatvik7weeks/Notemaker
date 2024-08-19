@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task App</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+</head>
+<body>
+    <h1 style="margin-left: 45%; text-decoration: underline;">NOTE MAKER</h1>
+
+    <div class="main">
+        <div id="form">
+            <form action="/create" method="post">
+                <input id="titl" type="text" placeholder="title" name="title" required>
+                <textarea name="details" placeholder="Write your notes here" required></textarea>
+                <input id="sub" type="submit" value="Create Task">
+            </form>
+        </div>
+    </div>
+
+    <div class="tasks">
+        <% if (tasks.length > 0) { %>
+            <% tasks.forEach(function(task){ %>
+                <div class="task">
+                    <h2><%= task.title %></h2>
+                    <p><%= task.content %></p>
+                </div>
+            <% }) %>
+        <% } else { %>
+            <p>No tasks available</p>
+        <% } %>
+    </div>
+
+    <script src="/javascripts/script.js"></script>
+</body>
+</html>

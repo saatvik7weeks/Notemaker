@@ -1,0 +1,62 @@
+body{
+    background-color: grey;
+}
+
+.main{
+    /* background-color: aqua; */
+    width: 50%;
+    margin-left: 28%;
+    margin-top: 10%; 
+    height: 400px;
+    gap: 100px;
+}
+form{
+    /* background-color: yellow; */
+    height: 400px;
+}
+input{
+    display: block;
+    border: 2px solid black;
+    font-weight: bold;
+    border-radius: 8px;
+
+  
+}
+textarea{
+    resize: none;
+    width: 50%;
+    height: 200px;
+    margin-top: 30px;
+    margin-left: 25%;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-weight: bold;
+
+}
+#titl{
+    width: 48%;
+    margin-left: 25%;
+    height: 22px;
+
+}
+#sub{
+    margin-left: 25%;
+
+}
+.tasks{
+    /* background-color: aqua; */
+    display: flex;
+    height: 500px;
+    gap: 10px;
+    flex-wrap:wrap ;
+    text-align: center;
+  margin-top: -50px;
+}
+.task{
+    height: 160px;
+    width: 150px;
+    background-color: whitesmoke;
+    color: black;
+    font-weight: 600;
+  margin-left: 5%;
+}
